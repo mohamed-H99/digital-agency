@@ -4,14 +4,14 @@
       <div class="section__header">
         <h2 class="section__title">Latest News.</h2>
         <span class="section-subtitle">Check out some of our news</span>
+      </div>
 
-        <div class="news__cards">
-          <news-card
-            v-for="(item, index) in news"
-            :key="item.id || index"
-            :data="item"
-          />
-        </div>
+      <div class="news__cards">
+        <news-card
+          v-for="(item, index) in news"
+          :key="item.id || index"
+          :data="item"
+        />
       </div>
     </div>
 
@@ -67,6 +67,12 @@ export default {
   grid-template-columns: repeat(var(--repeat), minmax(0, 1fr));
   gap: 1rem;
 }
+.news .section__header {
+  flex-direction: column;
+}
+.news .section__title:before {
+  display: none;
+}
 
 @media (min-width: 48em) {
   .news__cards {
@@ -75,11 +81,7 @@ export default {
   }
   .news .section__header {
     text-align: center;
-    flex-direction: column;
     gap: 0;
-  }
-  .news .section__title:before {
-    display: none;
   }
 }
 @media (min-width: 62em) {

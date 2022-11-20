@@ -119,7 +119,7 @@ export default {
     return {
       modules: [Pagination],
       settings: {
-        slidesPerView: 11.8,
+        slidesPerView: 1.25,
         spaceBetween: 20,
         // loop: true,
         lazyLoading: true,
@@ -129,6 +129,9 @@ export default {
         },
 
         breakpoints: {
+          480: {
+            slidesPerView: 1.8,
+          },
           768: {
             slidesPerView: 2.8,
             spaceBetween: 30,

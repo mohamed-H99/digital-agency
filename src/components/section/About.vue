@@ -101,7 +101,6 @@ export default {
 
 .about__info .item {
   padding: 1rem 1.25rem;
-  border-inline-end: 3px solid var(--primary-0);
 }
 .about__info .item:last-child {
   border-inline-end: 0;
@@ -119,6 +118,9 @@ export default {
 }
 
 @media (min-width: 48em) {
+  .about__info .item {
+    border-inline-end: 3px solid var(--primary-0);
+  }
   .about__items,
   .about__info {
     margin-top: 4rem;
