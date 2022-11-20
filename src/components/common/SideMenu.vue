@@ -1,5 +1,5 @@
 <template>
-  <div class="side-menu" :class="{ show }">
+  <div class="side-menu">
     <div class="side-menu__header">
       <span></span>
 
