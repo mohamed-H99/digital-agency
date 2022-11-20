@@ -43,7 +43,7 @@ export default {
   setup() {
     return {
       settings: {
-        slidesPerView: 2,
+        slidesPerView: 2.25,
         spaceBetween: 0,
         loop: true,
         lazyLoading: true,
@@ -53,7 +53,7 @@ export default {
 
         breakpoints: {
           768: {
-            slidesPerView: 4,
+            slidesPerView: 4.25,
           },
           992: {
             slidesPerView: 6,

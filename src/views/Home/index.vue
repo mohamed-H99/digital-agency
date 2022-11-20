@@ -7,6 +7,8 @@
     <works />
 
     <about />
+
+    <testimonials />
   </div>
 </template>
 
@@ -15,6 +17,7 @@ import Hero from "../../components/section/Hero.vue";
 import Services from "../../components/section/Services.vue";
 import Works from "../../components/section/Works.vue";
 import About from "../../components/section/About.vue";
+import Testimonials from "../../components/section/Testimonials.vue";
 
 export default {
   components: {
@@ -22,6 +25,7 @@ export default {
     Services,
     Works,
     About,
+    Testimonials,
   },
 };
 </script>
