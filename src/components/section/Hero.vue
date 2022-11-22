@@ -56,9 +56,30 @@ export default {
 .hero {
   background-color: var(--headerBgColor, var(--dark-0));
   color: var(--headerTextColor, var(--light-0));
+  position: relative;
 }
+
 .hero__wrapper {
   padding-block: 2rem;
+  position: relative;
+}
+.hero__wrapper:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  inset-inline-end: 0;
+  height: 100%;
+  width: 100%;
+  background: url("./hero-bg.png");
+  background-position: right center;
+  background-size: contain;
+  filter: grayscale(1);
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 0;
+}
+[dir="rtl"] .hero__wrapper:after {
+  background-position: left center;
 }
 .hero__title {
   font-size: 2.25rem;
